@@ -37,12 +37,12 @@ print(max_num_in_list(practice_list))
 
 def is_leap_year(a_year):
     """Proves if a given year is a leap year"""
-    if (a_year % 4 == 0) or (a_year % 400 == 0):
+    if ((a_year % 4 == 0) and (a_year % 100 != 0)) or (a_year % 400 == 0):
         return True
     else:
         return False
 
-print(is_leap_year(2020))
+print(is_leap_year(1900))
 print(is_leap_year(2021))
 
 
